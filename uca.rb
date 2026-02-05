@@ -5,21 +5,21 @@
 class Uca < Formula
   desc "Update multiple coding-agent CLIs with one command"
   homepage "https://github.com/chhoumann/uca"
-  version "0.2.4"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chhoumann/uca/releases/download/v0.2.4/uca_0.2.4_darwin_amd64.tar.gz"
-      sha256 "a523cdc6f5240d0b44ecaaacc80788771ce22ea41987d15716fda65d45667eea"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.0/uca_0.3.0_darwin_amd64.tar.gz"
+      sha256 "a9c0450fb3e50e81db51fd5c93a39b54032bfdda08c02285174221be98dd78f0"
 
       def install
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chhoumann/uca/releases/download/v0.2.4/uca_0.2.4_darwin_arm64.tar.gz"
-      sha256 "137e963fb441e2cf40c4f1f5dd3a51ad64bbcfdccf92b368a08bc1515fa76191"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.0/uca_0.3.0_darwin_arm64.tar.gz"
+      sha256 "710d663bea3f65bc3c1d3409a03559fc62e709776dcea7591ad0b727bbcc4127"
 
       def install
         bin.install "uca"
@@ -29,15 +29,15 @@ class Uca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.2.4/uca_0.2.4_linux_amd64.tar.gz"
-      sha256 "03ff27c3806a7109d229718946d392cd3a027717f6e24078d47a55bd99d7830a"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.0/uca_0.3.0_linux_amd64.tar.gz"
+      sha256 "47b0c553866ba891ab2d897df4c71d50d3483c820cb0842fa3e15e8175fe3531"
       def install
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.2.4/uca_0.2.4_linux_arm64.tar.gz"
-      sha256 "c4710a2a03510bd631fa21271eb47a467b3547d0693578bdc7a7bde01e5bbf10"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.0/uca_0.3.0_linux_arm64.tar.gz"
+      sha256 "f47f830211d60334da1c9e93be40f7858b5da8013a7bfba273fd6dbddc6d4f8a"
       def install
         bin.install "uca"
       end
