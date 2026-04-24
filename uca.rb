@@ -5,23 +5,23 @@
 class Uca < Formula
   desc "Update multiple coding-agent CLIs with one command"
   homepage "https://github.com/chhoumann/uca"
-  version "0.3.2"
+  version "0.3.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chhoumann/uca/releases/download/v0.3.2/uca_0.3.2_darwin_amd64.tar.gz"
-      sha256 "81d24ea9661f536a3f7411f91a8eb258f7e13b3e409c9d85361bf5df4a0ef3db"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.3/uca_0.3.3_darwin_amd64.tar.gz"
+      sha256 "f5fbdb392f390f370498dd416a8ceeb3f6fe02f142f592ffda1328ac8e6a8306"
 
-      def install
+      define_method(:install) do
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chhoumann/uca/releases/download/v0.3.2/uca_0.3.2_darwin_arm64.tar.gz"
-      sha256 "612dee7db62c910b199e94b053a8dc60b6cd8b768893497b9f2dca9dd4fada74"
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.3/uca_0.3.3_darwin_arm64.tar.gz"
+      sha256 "5c545f49175607d3b22a0df05440659ebee14f08c9789a0f07f7c808a6d46ac7"
 
-      def install
+      define_method(:install) do
         bin.install "uca"
       end
     end
@@ -29,16 +29,16 @@ class Uca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.3.2/uca_0.3.2_linux_amd64.tar.gz"
-      sha256 "592f4277ac713ddb2e234e232cd3559a1c9277375f97384a7c6592c01384ebb2"
-      def install
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.3/uca_0.3.3_linux_amd64.tar.gz"
+      sha256 "ad0a5990cdb5a5d7648cd724ca7ec62c730a84836baecd3aad7dae427d9c08e0"
+      define_method(:install) do
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.3.2/uca_0.3.2_linux_arm64.tar.gz"
-      sha256 "29552b50a0f691ff59735269fb7747b738087b37b365a0636d0d5e32e3ffef84"
-      def install
+      url "https://github.com/chhoumann/uca/releases/download/v0.3.3/uca_0.3.3_linux_arm64.tar.gz"
+      sha256 "1882bbb762522aee936aaba622efb5a628cf9ef66724509c28c649eb3d5a0e5d"
+      define_method(:install) do
         bin.install "uca"
       end
     end
