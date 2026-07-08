@@ -5,21 +5,21 @@
 class Uca < Formula
   desc "Update multiple coding-agent CLIs with one command"
   homepage "https://github.com/chhoumann/uca"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/chhoumann/uca/releases/download/v0.5.1/uca_0.5.1_darwin_amd64.tar.gz"
-      sha256 "21d20ab19b20fc787a45056d9e7e2c0a0f52f8aeb992cb7aa2c84b6987e0b9f3"
+      url "https://github.com/chhoumann/uca/releases/download/v0.6.0/uca_0.6.0_darwin_amd64.tar.gz"
+      sha256 "e51fd8332c7f526b65430c0395c70d00af8e89a9485391f50d3bc9628dd238c8"
 
       define_method(:install) do
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/chhoumann/uca/releases/download/v0.5.1/uca_0.5.1_darwin_arm64.tar.gz"
-      sha256 "a44e55c2c5d1d4e1304fc1e4fef8e576ec9284f5165f8f6d9e7c8ac5eb373042"
+      url "https://github.com/chhoumann/uca/releases/download/v0.6.0/uca_0.6.0_darwin_arm64.tar.gz"
+      sha256 "d26918ba3f2f44efd0475f7d3ee42267fe1704031f0fad27c6386f3af0e5e09a"
 
       define_method(:install) do
         bin.install "uca"
@@ -29,15 +29,15 @@ class Uca < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.5.1/uca_0.5.1_linux_amd64.tar.gz"
-      sha256 "c5f8e48e256bd98da02ac264210c4ee9434793729cd645fbac5ee62026accbd7"
+      url "https://github.com/chhoumann/uca/releases/download/v0.6.0/uca_0.6.0_linux_amd64.tar.gz"
+      sha256 "48d66a591ca0a22ee4bbc1d80ea99d5a652d137c8246c059ac11efd439f8f103"
       define_method(:install) do
         bin.install "uca"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/chhoumann/uca/releases/download/v0.5.1/uca_0.5.1_linux_arm64.tar.gz"
-      sha256 "bd552ee289210a76c84112d4e166a71b4b0de1592bc53db0874ed68f208b986c"
+      url "https://github.com/chhoumann/uca/releases/download/v0.6.0/uca_0.6.0_linux_arm64.tar.gz"
+      sha256 "da9c8267faeb95a3c2f061802c8c15aeb2dfb291a99fc2b4086204d1705f3aa7"
       define_method(:install) do
         bin.install "uca"
       end
